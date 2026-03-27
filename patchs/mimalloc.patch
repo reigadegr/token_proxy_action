@@ -1,0 +1,11 @@
+diff --git a/crates/openfang-cli/src/main.rs b/crates/openfang-cli/src/main.rs
+index 8219f91..afbdb6b 100644
+--- a/crates/openfang-cli/src/main.rs
++++ b/crates/openfang-cli/src/main.rs
+@@ -6853,3 +6853,6 @@ args = ["-y", "@modelcontextprotocol/server-github"]
+         assert!(!is_openfang_path_line("alias of=openfang", dir));
+     }
+ }
++
++#[global_allocator]
++static GLOBAL: mimalloc::MiMalloc = mimalloc::MiMalloc;
