@@ -1,10 +1,10 @@
-diff --git a/crates/openfang-cli/src/main.rs b/crates/openfang-cli/src/main.rs
-index 8219f91..afbdb6b 100644
---- a/crates/openfang-cli/src/main.rs
-+++ b/crates/openfang-cli/src/main.rs
-@@ -6853,3 +6853,6 @@ args = ["-y", "@modelcontextprotocol/server-github"]
-         assert!(!is_openfang_path_line("alias of=openfang", dir));
-     }
+diff --git a/crates/token_proxy_cli/src/main.rs b/crates/token_proxy_cli/src/main.rs
+index 60d8394..90fa7db 100644
+--- a/crates/token_proxy_cli/src/main.rs
++++ b/crates/token_proxy_cli/src/main.rs
+@@ -114,3 +114,6 @@ async fn serve(paths: token_proxy_core::paths::TokenProxyPaths) -> Result<(), St
+     let _ = proxy.stop().await?;
+     Ok(())
  }
 +
 +#[global_allocator]
